@@ -55,7 +55,7 @@ if ($mytest) {
 ```
 
 When using Ajax::error as a response,  the done function on jquery wont catch the
- response you should use the fail method from ajax
+ response, instead you should use the fail method from ajax
 
 ```
  $.ajax({
@@ -66,3 +66,9 @@ When using Ajax::error as a response,  the done function on jquery wont catch th
            
         });
 ```
+
+It is possible to change the way the methods success or error works with the 
+$status parameter if you pass status 200 to the Ajax::error then you can
+catch the response on jquery using the done method.
+
+ ```Ajax::error("This error has a status 200",200);```
