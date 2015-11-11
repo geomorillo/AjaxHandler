@@ -54,8 +54,8 @@ if ($mytest) {
      }
 ```
 
-When using Ajax::error as a response,  the done function on jquery wont catch the
- response, instead you should use the fail method from ajax
+When using Ajax::error as a response,  the done function on jquery wont catch
+the response, instead you should use the fail method from ajax
 
 ```
  $.ajax({
