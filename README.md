@@ -1,4 +1,7 @@
 # AjaxHandler
+
+Easily handles ajax requests.
+
 AjaxHandler for simplemvc framework
 
 Include it like this in your controller
