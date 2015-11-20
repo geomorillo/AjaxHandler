@@ -3,7 +3,7 @@
 /**
  * Easily handles ajax requests.
  * @author Jhobanny Morillo geomorillo@yahoo.com
- * @version 1.1
+ * @version 1.2
  */
 
 namespace Helpers;
@@ -136,7 +136,7 @@ class AjaxHandler {
     public static function x_error($message, $status = 400) {
         $addHash["error"] = $message;
         $addHash["success"] = false;
-        self::response($addHash);
+        self::response($addHash, $status);
     }
 
     /**
