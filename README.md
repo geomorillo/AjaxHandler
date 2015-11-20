@@ -36,7 +36,7 @@ function myfunction() {
         if ($mytest) {
             Ajax::success("Received");
         } else {
-            Ajax::error("Houston we have a problem");
+            Ajax::error("Houston we have a problem",200);//400 default parameter
         }
 
     }
