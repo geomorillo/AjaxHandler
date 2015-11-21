@@ -3,7 +3,7 @@
 /**
  * Easily handles ajax requests.
  * @author Jhobanny Morillo geomorillo@yahoo.com
- * @version 1.2
+ * @version 1.3
  */
 
 namespace Helpers;
@@ -96,11 +96,13 @@ class AjaxHandler {
             return NULL;
         }
         $val = self::$request[$key];
-        if (strtolower($val) == "true") {
-            $val = true;
-        }
-        if (strtolower($val) == "false") {
-            $val = false;
+        if (!is_array($val)) {
+            if (strtolower($val) == "true") {
+                $val = true;
+            }
+            if (strtolower($val) == "false") {
+                $val = false;
+            }
         }
         return $val;
     }
