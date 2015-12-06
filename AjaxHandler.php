@@ -3,7 +3,7 @@
 /**
  * Easily handles ajax requests.
  * @author Jhobanny Morillo geomorillo@yahoo.com
- * @version 1.3
+ * @version 1.3.1
  */
 
 namespace Helpers;
@@ -157,7 +157,7 @@ class AjaxHandler {
      * Returns the type of the request
      * @return string GET | PUT | POST | DELETE
      */
-    public static function getType() {
+    public static function x_getType() {
         return self::$requestType;
     }
 
